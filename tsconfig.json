@@ -21,7 +21,7 @@
     ],
     "paths": {
       "pretty-format": ["node_modules/pretty-format"],
-      "@/*": ["src/*"]
+      "@/*": ["*"]
     }
   },
   "include": ["./src/**/*.ts", "./src/**/*.tsx"],
