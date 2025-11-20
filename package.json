@@ -1,6 +1,6 @@
 {
   "name": "fintual-ds",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/cjs/index.js",
   "module": "dist/index.js",
   "types": "./dist/index.d.ts",
@@ -38,15 +38,25 @@
     "build:cjs": "tsc --project tsconfig.cjs.json && tsc-alias -p tsconfig.cjs.json",
     "lint": "biome check",
     "format": "biome format --write",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "pnpm run build",
+    "prepack": "pnpm run build"
   },
   "files": [
     "dist"
   ],
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "design-system",
+    "react",
+    "react-native"
+  ],
+  "author": "Ricardo H",
   "license": "ISC",
-  "description": "",
+  "description": "FN Design System - Component library for React and React Native",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RicardoHds/fintual-ds.git"
+  },
   "peerDependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
