@@ -8,7 +8,12 @@ type LinkProps = TypographyProps & {
   target?: '_blank';
 };
 
-export const Link = ({ href, underline = true, style, ...rest }: LinkProps) => {
+export const Link: React.FC<LinkProps> = ({
+  href,
+  underline = true,
+  style,
+  ...rest
+}) => {
   return (
     <a
       href={href}

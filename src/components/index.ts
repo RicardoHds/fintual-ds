@@ -1,8 +1,11 @@
+export { Button } from './Button';
 export { Caption } from './Caption';
 export { Code } from './Code';
 export { Heading } from './Heading';
+export { Input } from './Input';
 export { Label } from './Label';
 export { Link } from './Link';
 export { Overline } from './Overline';
 export { Paragraph } from './Paragraph';
+export { Snackbar } from './Snackbar';
 export { Text } from './Text';

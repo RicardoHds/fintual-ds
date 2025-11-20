@@ -1,8 +1,11 @@
+export { Button } from './Button/Button.native';
 export { Caption } from './Caption/Caption.native';
 export { Code } from './Code/Code.native';
 export { Heading } from './Heading/Heading.native';
+export { Input } from './Input/Input.native';
 export { Label } from './Label/Label.native';
 export { Link } from './Link/Link.native';
 export { Overline } from './Overline/Overline.native';
 export { Paragraph } from './Paragraph/Paragraph.native';
+export { Snackbar } from './Snackbar/Snackbar.native';
 export { Text } from './Text/Text.native';

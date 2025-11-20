@@ -3,7 +3,7 @@ import type { TypographyProps } from '@/components/types';
 import { useTheme } from '@/theme/ThemeProvider';
 import { Color, Typography as TypographyEnum } from '@/theme/tokens';
 
-export const Typography = ({
+export const Typography: React.FC<TypographyProps> = ({
   children,
   variant = TypographyEnum.BodyMd,
   color = Color.TextPrimary,
@@ -11,7 +11,7 @@ export const Typography = ({
   align = 'left',
   truncate,
   style,
-}: TypographyProps) => {
+}) => {
   const { typography, palette } = useTheme();
   const base = typography[variant];
 

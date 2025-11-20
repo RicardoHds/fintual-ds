@@ -8,12 +8,12 @@ type LinkProps = TypographyProps & {
   underline?: boolean;
 };
 
-export const Link = ({
+export const Link: React.FC<LinkProps> = ({
   onPress,
   underline = true,
   style,
   ...rest
-}: LinkProps) => {
+}) => {
   return (
     <Pressable onPress={onPress}>
       <TypographyNative

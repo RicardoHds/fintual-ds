@@ -1,4 +1,6 @@
 export enum Color {
+  Border = 'border',
+  InputBackground = 'inputBackground',
   TextPrimary = 'textPrimary',
   TextSecondary = 'textSecondary',
   TextInverse = 'textInverse',
@@ -21,6 +23,8 @@ export enum Typography {
 }
 
 export type Palette = {
+  [Color.Border]: string;
+  [Color.InputBackground]: string;
   [Color.TextPrimary]: string;
   [Color.TextSecondary]: string;
   [Color.TextInverse]: string;
@@ -30,6 +34,8 @@ export type Palette = {
 };
 
 export const lightPalette: Palette = {
+  [Color.Border]: '#E0E0E0',
+  [Color.InputBackground]: '#FFFFFF',
   [Color.TextPrimary]: '#1A1A1A',
   [Color.TextSecondary]: '#4D4D4D',
   [Color.TextInverse]: '#FFFFFF',
@@ -39,6 +45,8 @@ export const lightPalette: Palette = {
 };
 
 export const darkPalette: Palette = {
+  [Color.Border]: '#2D2D2D',
+  [Color.InputBackground]: '#1A1A1A',
   [Color.TextPrimary]: '#FFFFFF',
   [Color.TextSecondary]: '#C1C1C1',
   [Color.TextInverse]: '#000000',
