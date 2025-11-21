@@ -97,5 +97,9 @@ function MyComponent() {
 - Improve Palette colors (explore Tailwind)
 - Add Storybook for component documentation
 - Verify compatibility on React Native
+- Publish the package
+
+## LLMs
+The components was created with some help and adjusted with my preferences and corrections. [Heres is the LLMs](https://chatgpt.com/share/6920e5b2-1190-8013-8e32-f978bcaf97c6)
 
 
